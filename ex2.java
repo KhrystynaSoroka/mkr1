@@ -1,13 +1,11 @@
-import java.lang.reflect.Array;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.print("Введіть кількість рядків: ");
-        int rows = scan.nextInt();
-
+        int rows = 2;
         System.out.print("Введіть кількість стовпців: ");
         int cols = scan.nextInt();
 
