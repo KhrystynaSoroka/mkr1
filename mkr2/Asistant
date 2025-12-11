@@ -22,4 +22,12 @@ class Aspirant extends Student {
         System.out.println("Наукова робота: " + scientificWork);
         System.out.println();
     }
+
+    public String getScientificWork() {
+        return scientificWork;
+    }
+
+    public void setScientificWork(String scientificWork) {
+        this.scientificWork = scientificWork;
+    }
 }
