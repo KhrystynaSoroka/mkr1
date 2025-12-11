@@ -1,1 +1,25 @@
-
+class Aspirant extends Student {
+    private String scientificWork;
+    public Aspirant(String firstName, String lastName, String group, double averageMark, String scientificWork) {
+        super(firstName, lastName, group, averageMark);
+        this.scientificWork = scientificWork;
+    }
+    @Override
+    public int getScholarship() {
+        if(averageMark==5){
+            return 2000;
+        }
+        else {
+            return 1800;
+        }
+    }
+    @Override
+    public void printInfo() {
+        System.out.println("Аспірант: " + firstName + " " + lastName);
+        System.out.println("Група: " + group);
+        System.out.println("Середній бал: " + averageMark);
+        System.out.println("Стипендія: " + getScholarship() + " $");
+        System.out.println("Наукова робота: " + scientificWork);
+        System.out.println();
+    }
+}
